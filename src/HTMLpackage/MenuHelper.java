@@ -131,10 +131,10 @@ public class MenuHelper {
         addMenuItem(editMenu, "Вырезать", new DefaultEditorKit.CutAction());
         addMenuItem(editMenu, "Копировать", new DefaultEditorKit.CopyAction());
         addMenuItem(editMenu, "Вставить", new DefaultEditorKit.PasteAction());
+
         editMenu.addMenuListener(new UndoMenuListener(view, undoItem, redoItem));
     }
 
-    // Инциализация меню "Файл"
     public static void initFileMenu(View view, JMenuBar menuBar) {
         JMenu fileMenu = new JMenu("Файл");
         menuBar.add(fileMenu);

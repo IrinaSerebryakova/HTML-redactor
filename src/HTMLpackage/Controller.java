@@ -70,7 +70,6 @@ public class Controller {
         return stringWriter.toString();
     }
 
-    // Новый документ
     public void createNewDocument() {
         view.selectHtmlTab();
         resetDocument();

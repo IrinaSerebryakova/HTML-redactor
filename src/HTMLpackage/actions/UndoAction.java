@@ -1,7 +1,6 @@
 package HTMLpackage.actions;
 
 import HTMLpackage.View;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 

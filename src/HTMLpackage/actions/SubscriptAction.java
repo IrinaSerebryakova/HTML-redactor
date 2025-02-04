@@ -24,7 +24,6 @@ public class SubscriptAction extends StyledEditorKit.StyledTextAction {
             StyleConstants.setSubscript(simpleAttributeSet, !StyleConstants.isSubscript(mutableAttributeSet));
             setCharacterAttributes(jEditorPane, simpleAttributeSet, false);
             //Изменяет атрибуты элемента контента, для данного диапазона существующего контента в документе.
-
         }
     }
 }

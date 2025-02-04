@@ -21,4 +21,5 @@ public class SuperscriptAction extends StyledEditorKit.StyledTextAction{
             setCharacterAttributes(jEditorPane,simpleAttributeSet,false);
         }
     }
+
 }

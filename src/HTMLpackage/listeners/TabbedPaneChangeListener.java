@@ -1,7 +1,6 @@
 package HTMLpackage.listeners;
 
 import HTMLpackage.View;
-
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 

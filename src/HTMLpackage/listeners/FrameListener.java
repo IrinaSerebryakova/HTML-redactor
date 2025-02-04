@@ -1,7 +1,6 @@
 package HTMLpackage.listeners;
 
 import HTMLpackage.View;
-
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
