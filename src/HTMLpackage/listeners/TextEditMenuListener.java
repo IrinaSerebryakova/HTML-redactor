@@ -1,4 +1,4 @@
-package HTMLpackage.listener;
+package HTMLpackage.listeners;
 
 import HTMLpackage.View;
 
@@ -10,9 +10,11 @@ import java.awt.*;
 public class TextEditMenuListener implements MenuListener { //Этот класс будет работать аналогично классу UndoMenuListener только для других пунктов меню.
     //Пункты меню, отвечающие за стиль, шрифт, цвет и т.д. должны быть доступны только тогда, когда в нашем редакторе выбрана первая вкладка.
     private View view;
+
     public TextEditMenuListener(View view) {
         this.view = view;
     }
+
     @Override
     public void menuSelected(MenuEvent e) {
         JMenu jMenuSelected = (JMenu) e.getSource();
@@ -27,6 +29,7 @@ public class TextEditMenuListener implements MenuListener { //Этот клас�
 
         }
     }
+
     @Override
     public void menuDeselected(MenuEvent e) {
 

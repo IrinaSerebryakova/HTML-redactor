@@ -1,8 +1,8 @@
 package HTMLpackage;
 
-import HTMLpackage.action.*;
-import HTMLpackage.listener.TextEditMenuListener;
-import HTMLpackage.listener.UndoMenuListener;
+import HTMLpackage.actions.*;
+import HTMLpackage.listeners.TextEditMenuListener;
+import HTMLpackage.listeners.UndoMenuListener;
 
 import javax.swing.*;
 import javax.swing.text.DefaultEditorKit;
@@ -139,7 +139,6 @@ public class MenuHelper {
     public static void initFileMenu(View view, JMenuBar menuBar) {
         JMenu fileMenu = new JMenu("Файл");
         menuBar.add(fileMenu);
-
         addMenuItem(fileMenu, "Новый", view);
         addMenuItem(fileMenu, "Открыть", view);
         addMenuItem(fileMenu, "Сохранить", view);

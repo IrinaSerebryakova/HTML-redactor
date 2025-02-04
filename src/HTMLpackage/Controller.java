@@ -10,7 +10,6 @@ public class Controller {
     private HTMLDocument document;
     private File currentFile;
 
-    // конструктор принимает представление
     public Controller(View view) {
         this.view = view;
     }
@@ -48,7 +47,6 @@ public class Controller {
         document.addUndoableEditListener(view.getUndoListener());
         view.update();
     }
-
 
     //записывает переданный текст с html тегами в документ document
     public void setPlainText(String text) {

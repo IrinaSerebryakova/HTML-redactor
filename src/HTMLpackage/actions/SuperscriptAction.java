@@ -1,4 +1,4 @@
-package HTMLpackage.action;
+package HTMLpackage.actions;
 
 import javax.swing.*;
 import javax.swing.text.MutableAttributeSet;
@@ -8,7 +8,6 @@ import javax.swing.text.StyledEditorKit;
 import java.awt.event.ActionEvent;
 
 public class SuperscriptAction extends StyledEditorKit.StyledTextAction{
-
     public SuperscriptAction() {
         super(StyleConstants.Superscript.toString());
     }
@@ -21,7 +20,6 @@ public class SuperscriptAction extends StyledEditorKit.StyledTextAction{
             SimpleAttributeSet simpleAttributeSet = new SimpleAttributeSet();
             StyleConstants.setSuperscript(simpleAttributeSet, !StyleConstants.isSuperscript(mutableAttributeSet));
             setCharacterAttributes(jEditorPane,simpleAttributeSet,false);
-
         }
     }
 }

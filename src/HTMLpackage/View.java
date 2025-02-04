@@ -1,8 +1,8 @@
 package HTMLpackage;
 
-import HTMLpackage.listener.FrameListener;
-import HTMLpackage.listener.TabbedPaneChangeListener;
-import HTMLpackage.listener.UndoListener;
+import HTMLpackage.listeners.FrameListener;
+import HTMLpackage.listeners.TabbedPaneChangeListener;
+import HTMLpackage.listeners.UndoListener;
 
 import javax.swing.*;
 import javax.swing.undo.CannotRedoException;
@@ -14,9 +14,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by Rumata on 25.04.2017.
- */
 public class View extends JFrame implements ActionListener {
     private Controller controller;
     private JTabbedPane tabbedPane = new JTabbedPane();
@@ -32,7 +29,6 @@ public class View extends JFrame implements ActionListener {
         } catch (Exception e) {
             ExceptionHandler.log(e);
         }
-
     }
 
     //Геттер и сеттер для контроллера
@@ -49,7 +45,6 @@ public class View extends JFrame implements ActionListener {
         initGui();
         this.addWindowListener(new FrameListener(this));
         this.setVisible(true);
-
     }
 
     // Инициализирует кнопки меня в окне
@@ -65,7 +60,6 @@ public class View extends JFrame implements ActionListener {
         MenuHelper.initHelpMenu(this, jMenuBar); //help
 
         getContentPane().add(jMenuBar, BorderLayout.NORTH);
-
     }
 
     // Инициализация закладок окна. ХТМЛ/текст
@@ -73,9 +67,7 @@ public class View extends JFrame implements ActionListener {
         htmlTextPane.setContentType("text/html");
 
         tabbedPane.addTab("HTML", new JScrollPane(htmlTextPane));
-
         tabbedPane.addTab("Текст", new JScrollPane(plainTextPane));
-
         tabbedPane.setPreferredSize(new Dimension(100, 100));
         tabbedPane.addChangeListener(new TabbedPaneChangeListener(this));
         this.getContentPane().add(tabbedPane, BorderLayout.CENTER);
@@ -111,7 +103,7 @@ public class View extends JFrame implements ActionListener {
         }
     }
 
-    // Выход  из системы, пробрасывет закрытие в контроллер
+    // Выход  из системы, пробрасывает закрытие в контроллер
     public void exit() {
         controller.exit();
     }
@@ -127,7 +119,6 @@ public class View extends JFrame implements ActionListener {
         }
         resetUndo();
     }
-
 
     // Проверка возможности отменить действие
     public boolean canUndo() {
@@ -176,7 +167,6 @@ public class View extends JFrame implements ActionListener {
     public void selectHtmlTab() {
         tabbedPane.setSelectedIndex(0);
         resetUndo();
-
     }
 
     // обновляет html страницу
@@ -188,6 +178,5 @@ public class View extends JFrame implements ActionListener {
     public void showAbout() {
         JOptionPane.showMessageDialog(getContentPane(), "It hard to be God", "Information", JOptionPane.INFORMATION_MESSAGE);
     }
-
 
 }

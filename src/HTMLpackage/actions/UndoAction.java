@@ -1,4 +1,4 @@
-package HTMLpackage.action;
+package HTMLpackage.actions;
 
 import HTMLpackage.View;
 
@@ -11,8 +11,6 @@ public class UndoAction extends AbstractAction {
     public UndoAction(View view) {
         this.view = view;
     }
-
-
 
     @Override
     public void actionPerformed(ActionEvent e) {

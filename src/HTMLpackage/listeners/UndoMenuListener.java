@@ -1,4 +1,4 @@
-package HTMLpackage.listener;
+package HTMLpackage.listeners;
 
 import HTMLpackage.View;
 
@@ -19,10 +19,10 @@ public class UndoMenuListener implements MenuListener { //Этот слушат�
     public void menuSelected(MenuEvent e) {
      /*   undoMenuItem.setEnabled(view.canUndo());   из правильного решения в github
         redoMenuItem.setEnabled(view.canRedo());*/
-        if(undoManager.canUndo()) {
+        if (undoManager.canUndo()) {
             undoMenuItem.setEnabled(true);
         }
-        if(undoManager.canRedo()) {
+        if (undoManager.canRedo()) {
             redoMenuItem.setEnabled(true);
         }
     }
@@ -30,10 +30,12 @@ public class UndoMenuListener implements MenuListener { //Этот слушат�
     @Override
     public void menuDeselected(MenuEvent e) {
     }
+
     @Override
     public void menuCanceled(MenuEvent e) {
     }
-    public UndoMenuListener(View view, JMenuItem undoMenuItem, JMenuItem redoMenuItem){
+
+    public UndoMenuListener(View view, JMenuItem undoMenuItem, JMenuItem redoMenuItem) {
         this.view = view;
         this.undoMenuItem = undoMenuItem;
         this.redoMenuItem = redoMenuItem;
