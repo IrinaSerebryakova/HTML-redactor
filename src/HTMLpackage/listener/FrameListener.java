@@ -1,4 +1,6 @@
-package HTMLpackage;
+package HTMLpackage.listener;
+
+import HTMLpackage.View;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

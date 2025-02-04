@@ -1,4 +1,6 @@
-package HTMLpackage;
+package HTMLpackage.action;
+
+import HTMLpackage.View;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

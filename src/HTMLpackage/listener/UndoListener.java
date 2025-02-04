@@ -1,4 +1,4 @@
-package HTMLpackage;
+package HTMLpackage.listener;
 
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;

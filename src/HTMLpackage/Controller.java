@@ -5,7 +5,6 @@ import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 import java.io.*;
 
-
 public class Controller {
     private View view;
     private HTMLDocument document;

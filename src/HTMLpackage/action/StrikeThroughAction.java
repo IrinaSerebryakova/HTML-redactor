@@ -1,4 +1,4 @@
-package HTMLpackage;
+package HTMLpackage.action;
 
 import javax.swing.*;
 import javax.swing.text.MutableAttributeSet;

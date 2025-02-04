@@ -1,5 +1,9 @@
 package HTMLpackage;
 
+import HTMLpackage.listener.FrameListener;
+import HTMLpackage.listener.TabbedPaneChangeListener;
+import HTMLpackage.listener.UndoListener;
+
 import javax.swing.*;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;

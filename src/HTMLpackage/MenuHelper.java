@@ -1,5 +1,9 @@
 package HTMLpackage;
 
+import HTMLpackage.action.*;
+import HTMLpackage.listener.TextEditMenuListener;
+import HTMLpackage.listener.UndoMenuListener;
+
 import javax.swing.*;
 import javax.swing.text.DefaultEditorKit;
 import javax.swing.text.StyleConstants;
