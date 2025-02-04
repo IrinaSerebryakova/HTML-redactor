@@ -11,7 +11,6 @@ public class FrameListener extends WindowAdapter { //класс для удоб�
     public FrameListener(View view) {
         this.view = view;
     }
-
     @Override
     public void windowClosing(WindowEvent e) { // Вызывается, когда окно находится в процессе закрытия.
         view.exit();

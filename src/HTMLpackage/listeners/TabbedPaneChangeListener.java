@@ -11,7 +11,6 @@ public class TabbedPaneChangeListener implements ChangeListener {  //Этот к
     public TabbedPaneChangeListener(View view) {
         this.view = view;
     }
-
     @Override
     public void stateChanged(ChangeEvent e) { //Этот метод должен быть обеспечен реализацией ChangeListener.
         view.selectedTabChanged();

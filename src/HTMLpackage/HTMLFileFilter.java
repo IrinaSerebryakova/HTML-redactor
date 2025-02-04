@@ -13,7 +13,6 @@ public class HTMLFileFilter extends FileFilter {
         }
         return false;
     }
-
     @Override
     public String getDescription() {
         return "HTML и HTM файлы";

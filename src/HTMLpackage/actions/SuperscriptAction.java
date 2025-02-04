@@ -11,7 +11,6 @@ public class SuperscriptAction extends StyledEditorKit.StyledTextAction{
     public SuperscriptAction() {
         super(StyleConstants.Superscript.toString());
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         JEditorPane jEditorPane = getEditor(e);

@@ -11,7 +11,6 @@ public class SubscriptAction extends StyledEditorKit.StyledTextAction {
     public SubscriptAction() {
         super(StyleConstants.Subscript.toString());
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         JEditorPane jEditorPane = getEditor(e);    //Получает целевой редактор для действия.

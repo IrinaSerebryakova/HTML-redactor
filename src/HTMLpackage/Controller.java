@@ -77,7 +77,6 @@ public class Controller {
         view.setTitle("HTML редактор");
         currentFile = null;
         view.resetUndo();
-
     }
 
     // открыть документ

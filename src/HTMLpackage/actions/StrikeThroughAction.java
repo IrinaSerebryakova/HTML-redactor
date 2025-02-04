@@ -11,7 +11,6 @@ public class StrikeThroughAction extends StyledEditorKit.StyledTextAction {
     public StrikeThroughAction() {
         super(StyleConstants.StrikeThrough.toString());
     }
-
     public void actionPerformed(ActionEvent actionEvent) {
         JEditorPane jEditorPane = getEditor(actionEvent);
         if (jEditorPane != null) {

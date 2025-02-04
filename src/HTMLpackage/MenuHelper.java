@@ -131,7 +131,6 @@ public class MenuHelper {
         addMenuItem(editMenu, "Вырезать", new DefaultEditorKit.CutAction());
         addMenuItem(editMenu, "Копировать", new DefaultEditorKit.CopyAction());
         addMenuItem(editMenu, "Вставить", new DefaultEditorKit.PasteAction());
-
         editMenu.addMenuListener(new UndoMenuListener(view, undoItem, redoItem));
     }
 

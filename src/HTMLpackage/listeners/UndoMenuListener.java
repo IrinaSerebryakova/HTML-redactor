@@ -14,7 +14,6 @@ public class UndoMenuListener implements MenuListener { //Этот слушат�
     private UndoManager undoManager = new UndoManager();
     private JMenuItem undoMenuItem = new JMenuItem("Отменить");
     private JMenuItem redoMenuItem = new JMenuItem("Вернуть");
-
     @Override
     public void menuSelected(MenuEvent e) {
      /*   undoMenuItem.setEnabled(view.canUndo());   из правильного решения в github

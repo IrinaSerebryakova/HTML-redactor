@@ -10,7 +10,6 @@ public class UndoListener implements UndoableEditListener {
     public UndoListener(UndoManager undoManager) {
         this.undoManager = undoManager;
     }
-
     @Override
     public void undoableEditHappened(UndoableEditEvent e) {   //должен из переданного события получать правку и добавлять ее в undoManager.
         undoManager.addEdit(e.getEdit());

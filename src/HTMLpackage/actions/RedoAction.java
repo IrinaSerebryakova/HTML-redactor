@@ -4,7 +4,6 @@ import HTMLpackage.View;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-
 public class RedoAction extends AbstractAction {
     private View view;
 

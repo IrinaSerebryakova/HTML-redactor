@@ -147,7 +147,6 @@ public class View extends JFrame implements ActionListener {
             ExceptionHandler.log(e);
         }
     }
-
     // геттер для слушателя изменений
     public UndoListener getUndoListener() {
         return undoListener;
